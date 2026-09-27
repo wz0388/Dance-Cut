@@ -19,7 +19,18 @@
 - **GPU 加速**：切片优先用 `h264_nvenc`，不可用自动回退 `libx264`
 - **可打包成 exe**：PyInstaller 一键打包，分发给不装 Python 的人
 
-## 快速开始
+## 下载
+
+不想装 Python 的话，直接下预编译包：
+
+**👉 [Releases · 便携版 DanceCut_portable.zip](https://github.com/wz0388/Dance-Cut/releases/latest)**
+
+解压后双击 `DanceCut\DanceCut.exe` 即可，含 FFmpeg 与模型，开箱即用
+（约 137 MB，Windows x64）。
+
+> 发布包内含 FFmpeg 的 GPL 构建，相关说明见 [NOTICE.md](NOTICE.md)。
+
+## 从源码运行
 
 ### 依赖
 

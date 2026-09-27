@@ -52,14 +52,39 @@ OSI 要求协议不得限制使用领域。因此本项目更准确的说法是
 
 ## 关于 FFmpeg
 
+### 源码仓库
+
 本仓库**不包含** FFmpeg 二进制文件。使用者需自行从官方渠道获取：
 
 - <https://www.gyan.dev/ffmpeg/builds/>
 - <https://github.com/BtbN/FFmpeg-Builds/releases>
 
-请注意 FFmpeg 的许可：若你使用带 GPL 组件的构建（如 `libx264` 编码器），
-分发包含该二进制的产物时需要遵循 GPL 的相应要求。本项目通过调用外部
-`ffmpeg.exe` 的方式使用它，未将其链接进本程序。
+### 预编译发布包（GitHub Releases）
+
+**Release 里的 `DanceCut_portable.zip` 是包含 FFmpeg 二进制的**（为了开箱即用），
+特此说明：
+
+| 项目 | 说明 |
+|---|---|
+| 来源 | [gyan.dev](https://www.gyan.dev/ffmpeg/builds/) 的 `ffmpeg-7.1.1-essentials_build` |
+| 许可 | **GPL-3.0**（该构建启用了 `libx264` 等 GPL 组件） |
+| 源码 | <https://ffmpeg.org/download.html> · <https://git.ffmpeg.org/ffmpeg.git> |
+| 说明 | 第三方独立程序，与本项目仅为"调用"关系，未链接进本程序代码 |
+
+> ⚠️ **若你要再分发这个便携包**，或用于商业场景，需要自行遵守 FFmpeg 的 GPL 条款：
+> 提供对应源码或获取渠道、保留其版权声明。**本项目自身的非商业限制不改变 FFmpeg 的 GPL 义务**——
+> 两套许可同时适用，取更严格者。
+>
+> 需要完全规避这一步的话，可以下载源码仓库版本，自行替换为 LGPL 构建的 FFmpeg
+> （不含 libx264，例如 `ffmpeg-*-essentials_build` 换成 LGPL 共享版）。
+
+本项目的调用方式：通过 `subprocess` 执行外部 `ffmpeg.exe`，
+未做任何链接或静态合并。
+
+## 关于模型文件
+
+`models/pose_landmarker_full.task` 与 `models/hand_landmarker.task` 来自
+Google MediaPipe，许可 **Apache-2.0**，随源码仓库与发布包一同分发。
 
 ## 关于媒体素材
 
