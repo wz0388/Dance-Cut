@@ -1,0 +1,81 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+venv/
+.venv/
+env/
+
+# PyInstaller
+.build/
+*.spec
+_old_*/
+
+# 本程序的运行产物（不要把处理结果提交上来）
+frames/
+skeleton/
+skeleton_samples/
+clips/
+out*/
+output/
+batch_test/
+*_test/
+dance_out/
+logs/
+run_summary.json
+dance_result.csv
+dance_clips.csv
+dance_blocks_analysis.csv
+batch_summary.csv
+pose_metrics.csv
+merged.csv
+motion.csv
+hand_landmarks_dance.csv
+dance_candidates.csv
+dance_segments*.csv
+*.task.bak
+
+# 媒体素材（体积大，且通常没有分发权）
+*.mp4
+*.mkv
+*.flv
+*.mov
+*.avi
+*.ts
+*.wmv
+*.m4v
+*.webm
+*.mpg
+*.mpeg
+*.rmvb
+*.3gp
+*.zip
+*.7z
+*.rar
+
+# 二进制
+ffmpeg.exe
+ffprobe.exe
+ffplay.exe
+DanceCut.exe
+DanceCut/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 密钥、令牌、个人配置
+*.pem
+.env
+.env.*
+secrets.*

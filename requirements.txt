@@ -1,0 +1,12 @@
+# DanceCut 运行依赖
+# 界面版（app/dance_cut.py）只需要这几个：
+mediapipe>=1.0.0
+opencv-python>=4.9
+numpy>=1.26
+
+# 以下仅 pipeline/ 里的分步脚本需要（生成 HTML 报告）：
+pandas>=2.0
+matplotlib>=3.8
+
+# 打包 exe 时额外需要：
+# pyinstaller>=6.0
