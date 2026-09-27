@@ -2,10 +2,8 @@
 # DanceCut - 舞蹈片段自动识别与切片
 # Copyright (c) 2026 wz0388  <https://github.com/wz0388>
 #
-# 本文件采用 PolyForm Noncommercial License 1.0.0 授权：
-#   允许个人学习、研究、修改与非商业分发；**禁止任何商业用途**。
+# 本文件采用 Apache License 2.0 授权（SPDX-License-Identifier: Apache-2.0）。
 #   完整条款见仓库根目录 LICENSE，中文说明见 NOTICE.md。
-#   商业授权请联系作者。
 #
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-

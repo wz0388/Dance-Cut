@@ -1,4 +1,4 @@
-# DanceCut - 舞蹈片段自动识别与切片  |  PolyForm Noncommercial 1.0.0（禁止商用，详见 LICENSE）
+# DanceCut - 舞蹈片段自动识别与切片  |  Apache-2.0（SPDX-License-Identifier: Apache-2.0，详见 LICENSE）
 # Copyright (c) 2026 wz0388 <https://github.com/wz0388>
 # -*- coding: utf-8 -*-
 """Stage B — 用 1 秒精度重扫每个区块的起止边界（3 秒采样只能定到 ±3s）。"""

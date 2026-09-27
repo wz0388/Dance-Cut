@@ -176,7 +176,7 @@ Dance-Cut/
 ├── models/                 MediaPipe 模型
 ├── docs/                   截图
 ├── requirements.txt
-├── LICENSE                 PolyForm Noncommercial 1.0.0
+├── LICENSE                 Apache License 2.0
 └── NOTICE.md               中文授权说明 + 第三方组件声明
 ```
 
@@ -205,7 +205,10 @@ Dance-Cut/
 | [FFmpeg](https://ffmpeg.org/) | 抽帧、切片、合成（**不随仓库分发**） | LGPL / GPL |
 | [OpenCV](https://opencv.org/) | 图像读写与绘制 | Apache-2.0 |
 
+> 本项目的 Apache-2.0 授权仅覆盖本项目自身代码；FFmpeg 等第三方组件仍遵循各自的协议。
+
 ## 许可
 
-[PolyForm Noncommercial License 1.0.0](LICENSE) —— 源码开放，**禁止商用**。
-商业授权请联系仓库作者。
+[Apache License 2.0](LICENSE) —— 自由使用，**允许商用**，包括闭源集成。
+
+再分发时请保留 [LICENSE](LICENSE) 与版权声明，详见 [NOTICE.md](NOTICE.md)。
